@@ -44,7 +44,7 @@ class AndroidVideoPlayer extends VideoPlayerPlatform {
         dataSource: dataSource,
         // Compatibility; "create" is always a textureView (createWithOptions
         // allows selecting).
-        viewType: VideoViewType.textureView,
+        viewType: VideoViewType.platformView,
       ),
     );
   }
