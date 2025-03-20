@@ -197,7 +197,7 @@ void main() {
             asset: 'someAsset',
             package: 'somePackage',
           ),
-          viewType: VideoViewType.textureView,
+          viewType: VideoViewType.platformView,
         ),
       );
       expect(log.log.last, 'create');
@@ -216,7 +216,7 @@ void main() {
             uri: 'someUri',
             formatHint: VideoFormat.dash,
           ),
-          viewType: VideoViewType.textureView,
+          viewType: VideoViewType.platformView,
         ),
       );
       expect(log.log.last, 'create');
@@ -238,7 +238,7 @@ void main() {
             uri: 'someUri',
             httpHeaders: <String, String>{'Authorization': 'Bearer token'},
           ),
-          viewType: VideoViewType.textureView,
+          viewType: VideoViewType.platformView,
         ),
       );
       expect(log.log.last, 'create');
@@ -260,7 +260,7 @@ void main() {
             sourceType: DataSourceType.file,
             uri: 'someUri',
           ),
-          viewType: VideoViewType.textureView,
+          viewType: VideoViewType.platformView,
         ),
       );
       expect(log.log.last, 'create');
