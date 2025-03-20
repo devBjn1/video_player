@@ -40,6 +40,8 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    ndkVersion = "29.0.13113456" 
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
@@ -49,6 +51,9 @@ android {
     }
     lint {
         disable 'InvalidPackage'
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"  // or "11" if you want a higher version
     }
 }
 
