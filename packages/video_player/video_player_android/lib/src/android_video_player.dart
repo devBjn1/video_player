@@ -41,11 +41,11 @@ class AndroidVideoPlayer extends VideoPlayerPlatform {
   Future<int?> create(DataSource dataSource) {
     return createWithOptions(
       VideoCreationOptions(
-        dataSource: dataSource,
-        // Compatibility; "create" is always a textureView (createWithOptions
-        // allows selecting).
-        viewType: VideoViewType.platformView,
-      ),
+          dataSource: dataSource,
+          // Compatibility; "create" is always a textureView (createWithOptions
+          // allows selecting).
+          // viewType: VideoViewType.textureView,
+          viewType: VideoViewType.platformView),
     );
   }
 
